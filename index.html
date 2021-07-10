@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>10 KB Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:image" content="https://10kbclub.com/favicon.png">
+<style>
+body {color: #333; font-family: helvetica, arial, sans-serif;
+      line-height: 1.5; margin: 0 auto; max-width: 40em; padding: 0 1em}
+h1, h2 {margin: 1em 0 0.5em 0; line-height: 1.2em}
+h2 a:empty:before {content: "#"}
+h2 a:empty {visibility: hidden; padding-left: 0.25em}
+h2:hover a:empty {visibility: visible}
+a:link, a:visited {color: #03c; text-decoration: none}
+a:hover, a:active {color: #03f; text-decoration: underline}
+hr {border: 0; border-bottom: thin solid}
+table {min-width: 100%; border-spacing: 0 0.25em;}
+th, td {padding: 0.5em; text-align: right}
+th, .data {background: #eee}
+.rank, .info td {border-left: medium solid}
+.rank {border-color: #bbb}
+.data:hover, .data:active, .data:focus {background: #ddd}
+.data {cursor: pointer}
+.info {background: #eef; display: none}
+.info td {border-color: #99c}
+.url, .info td {text-align: left}
+.info td {padding: 0.8em 1em}
+.info :first-child {margin-top: 0}
+.info :last-child {margin-bottom: 0}
+footer {margin: 1.5em 0; text-align: center; font-size: small}
+@media (prefers-color-scheme: dark) {
+  body {color: #bbb; background: #222}
+  a:link, a:visited {color: #9bf}
+  a:hover, a:active {color: #acf}
+  th, .data {background: #111}
+  .rank {border-color: #444}
+  .data:hover, .data:active, .data:focus {background: #000}
+  .info {background: #114; display: none}
+  .info td {border-color: #669}
+}
+</style>
+<script>
+window.onload = function () {
+  var rows = document.getElementsByClassName('info').length
+  for (var i = 1; i <= rows; i++) {
+    (function () {
+      var rank = i
+      var dataRow = document.getElementById('data' + rank)
+      var infoRow = document.getElementById('info' + rank)
+      dataRow.onclick = function () {
+        if (infoRow.style.display === '') {
+          infoRow.style.display = 'table-row'
+        } else {
+          infoRow.style.display = ''
+        }
+      }
+    })()
+  }
+}
+</script>
+</head>
+<body>
+
+<h1>10 KB Club</h1>
+<p>
+The 10&nbsp;KB Club is a curated collection of websites whose home pages
+do not exceed 10&nbsp;KB compressed size. See <a
+href="https://github.com/susam/10kbclub">this GitHub repository</a> for
+the source code of this website.
+</p>
+<p>
+The <a href="#club-rules">Club Rules</a> section specify the eligibility
+criteria for websites to be a member of this club. To suggest a new
+website to be added to this list, <a
+href="https://github.com/susam/10kbclub/issues/new">create a new issue
+on GitHub</a>.
+</p>
+
+<h2 id="club-members">Club Members<a href="#club-members"></a></h2>
+<p>
+The following websites are members of the 10&nbsp;KB Club. Click
+anywhere on a row (except on the website name) to see links to popular
+Reddit and Hacker News discussions on content belonging to the
+website. The oldest five popular discussions from each forum have been
+picked for this list.
+</p>
+<table>
+  <tr>
+    <th class="rank">#</th>
+    <th class="url">Website</th>
+    <th class="total">Total Size</th>
+    <th class="content">Content Size</th>
+    <th class="ratio">Content Ratio</th>
+  </tr>
+  <tr class="data" id="data1">
+    <td class="rank">1.</td>
+    <td class="url"><a href="https://minwiz.com/" id="url1">minwiz.com</a></td>
+    <td class="total" title="1672 bytes">1.6&nbsp;KB</td>
+    <td class="content" title="1672 bytes">1.6&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info1">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/programming/comments/krooqi">Starter kit for lightweight sites</a>
+      (&approx; 1100 points on r/programming)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data2">
+    <td class="rank">2.</td>
+    <td class="url"><a href="http://neverssl.com/" id="url2">neverssl.com</a></td>
+    <td class="total" title="1716 bytes">1.7&nbsp;KB</td>
+    <td class="content" title="1716 bytes">1.7&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info2">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=13369038">NeverSSL</a>
+      (307 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=21430157">NeverSSL</a>
+      (346 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data3">
+    <td class="rank">3.</td>
+    <td class="url"><a href="https://sjmulder.nl/" id="url3">sjmulder.nl</a></td>
+    <td class="total" title="1912 bytes">1.9&nbsp;KB</td>
+    <td class="content" title="1912 bytes">1.9&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info3">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=23626929">Text-Only Websites</a>
+      (302 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data4">
+    <td class="rank">4.</td>
+    <td class="url"><a href="https://m-chrzan.xyz/" id="url4">m-chrzan.xyz</a></td>
+    <td class="total" title="2484 bytes">2.4&nbsp;KB</td>
+    <td class="content" title="1087 bytes">1.1&nbsp;KB</td>
+    <td class="ratio">44%</td>
+  </tr>
+  <tr class="info" id="info4">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/vim/comments/j61q0y">Vim Keybindings in All CLIs</a>
+      (&approx; 140 points on r/vim)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data5">
+    <td class="rank">5.</td>
+    <td class="url"><a href="https://augustl.com/" id="url5">augustl.com</a></td>
+    <td class="total" title="3094 bytes">3.0&nbsp;KB</td>
+    <td class="content" title="1323 bytes">1.3&nbsp;KB</td>
+    <td class="ratio">43%</td>
+  </tr>
+  <tr class="info" id="info5">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/programming/comments/1crm00">Truly concurrent user interfaces</a>
+      (&approx; 100 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/wow/comments/2cyu9d">That WoW server blade</a>
+      (&approx; 190 points on r/wow)
+    </li><li>
+      <a href="https://www.reddit.com/r/linux/comments/e6fvj0">Linux exists only because of a happy accident</a>
+      (&approx; 960 points on r/linux)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/ec9s2o">The #1 bug predictor is not technical</a>
+      (&approx; 320 points on r/programming)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=6086983">ZeroMQ instead of HTTP, for internal services</a>
+      (206 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=7166173">An immutable operating system</a>
+      (286 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=7449262">JDK8 + Facebook React</a>
+      (118 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=8153781">That WoW server blade</a>
+      (104 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=16889789">Datomic: Look at all the things I'm not doing</a>
+      (138 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data6">
+    <td class="rank">6.</td>
+    <td class="url"><a href="https://seirdy.one" id="url6">seirdy.one</a></td>
+    <td class="total" title="3198 bytes">3.1&nbsp;KB</td>
+    <td class="content" title="3198 bytes">3.1&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info6">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/degoogle/comments/m9hesi">A look at search engines with their own indexes</a>
+      (&approx; 160 points on r/degoogle)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data7">
+    <td class="rank">7.</td>
+    <td class="url"><a href="https://plumebio.com/" id="url7">plumebio.com</a></td>
+    <td class="total" title="3523 bytes">3.4&nbsp;KB</td>
+    <td class="content" title="1932 bytes">1.9&nbsp;KB</td>
+    <td class="ratio">55%</td>
+  </tr>
+  <tr class="info" id="info7">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=24019540">JavaScript-free personal bio hosting</a>
+      (123 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data8">
+    <td class="rank">8.</td>
+    <td class="url"><a href="https://tomasino.org/" id="url8">tomasino.org</a></td>
+    <td class="total" title="3549 bytes">3.5&nbsp;KB</td>
+    <td class="content" title="3549 bytes">3.5&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info8">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=22153665">GNU Recutils</a>
+      (505 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data9">
+    <td class="rank">9.</td>
+    <td class="url"><a href="https://nytpu.com/" id="url9">nytpu.com</a></td>
+    <td class="total" title="3758 bytes">3.7&nbsp;KB</td>
+    <td class="content" title="2213 bytes">2.2&nbsp;KB</td>
+    <td class="ratio">59%</td>
+  </tr>
+  <tr class="info" id="info9">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=26436872">How Git servers work, and how to keep yours secure</a>
+      (167 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data10">
+    <td class="rank">10.</td>
+    <td class="url"><a href="https://jlelse.blog/" id="url10">jlelse.blog</a></td>
+    <td class="total" title="4480 bytes">4.4&nbsp;KB</td>
+    <td class="content" title="2958 bytes">2.9&nbsp;KB</td>
+    <td class="ratio">66%</td>
+  </tr>
+  <tr class="info" id="info10">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/privacy/comments/eb126i">Google is not a search engine, but an ad engine</a>
+      (&approx; 2050 points on r/privacy)
+    </li><li>
+      <a href="https://www.reddit.com/r/firefox/comments/k35552">Why is the market share of Firefox in Germany so much higher?</a>
+      (&approx; 330 points on r/firefox)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data11">
+    <td class="rank">11.</td>
+    <td class="url"><a href="https://sdf.org/" id="url11">sdf.org</a></td>
+    <td class="total" title="4906 bytes">4.8&nbsp;KB</td>
+    <td class="content" title="4906 bytes">4.8&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info11">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/programming/comments/301cpl">Why Are My Page_faults So High in Perf?</a>
+      (&approx; 100 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/emacs/comments/e2vzu7">gccemacs</a>
+      (&approx; 130 points on r/emacs)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=5638988">This page is anonymous</a>
+      (450 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=7424814">iOS 7.1 Mobile Safari Minimal UI</a>
+      (151 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=12351187">Dinosaur and Lisp</a>
+      (237 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=14134798">SDF – Public Access Unix System</a>
+      (194 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=17844587">From GNU social to Mastodon</a>
+      (186 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data12">
+    <td class="rank">12.</td>
+    <td class="url"><a href="https://cedaei.com/" id="url12">cedaei.com</a></td>
+    <td class="total" title="5701 bytes">5.6&nbsp;KB</td>
+    <td class="content" title="3367 bytes">3.3&nbsp;KB</td>
+    <td class="ratio">59%</td>
+  </tr>
+  <tr class="info" id="info12">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=24280413">Vim-Like Layer for Xorg and Wayland </a>
+      (148 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data13">
+    <td class="rank">13.</td>
+    <td class="url"><a href="https://susam.in/" id="url13">susam.in</a></td>
+    <td class="total" title="5815 bytes">5.7&nbsp;KB</td>
+    <td class="content" title="2354 bytes">2.3&nbsp;KB</td>
+    <td class="ratio">40%</td>
+  </tr>
+  <tr class="info" id="info13">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/programming/comments/he7c7">Sequence Points</a>
+      (&approx; 130 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/exjhfc">Global Palindrome Day</a>
+      (&approx; 170 points on r/programming)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=21700139">Sinkholed</a>
+      (616 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data14">
+    <td class="rank">14.</td>
+    <td class="url"><a href="https://box.matto.nl/" id="url14">box.matto.nl</a></td>
+    <td class="total" title="6753 bytes">6.6&nbsp;KB</td>
+    <td class="content" title="3955 bytes">3.9&nbsp;KB</td>
+    <td class="ratio">59%</td>
+  </tr>
+  <tr class="info" id="info14">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=19178885">We Must Revive Gopher</a>
+      (230 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data15">
+    <td class="rank">15.</td>
+    <td class="url"><a href="https://zserge.com/" id="url15">zserge.com</a></td>
+    <td class="total" title="7090 bytes">6.9&nbsp;KB</td>
+    <td class="content" title="3657 bytes">3.6&nbsp;KB</td>
+    <td class="ratio">52%</td>
+  </tr>
+  <tr class="info" id="info15">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/programming/comments/12253z">CUCU: A compiler you can understand</a>
+      (&approx; 130 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/6obyqb">Syntactic sugar in C - (ab)using "for" loops</a>
+      (&approx; 200 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/commandline/comments/g9k4sz">Tmux for mere mortals</a>
+      (&approx; 110 points on r/commandline)
+    </li><li>
+      <a href="https://www.reddit.com/r/java/comments/gv3l2g">How to write a (toy) JVM</a>
+      (&approx; 150 points on r/java)
+    </li><li>
+      <a href="https://www.reddit.com/r/webdev/comments/j9o6yq">World smallest office suite</a>
+      (&approx; 150 points on r/webdev)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=13592645">Partcl - a tiny command language</a>
+      (114 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=22831931">Ode to J</a>
+      (85 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=23003603">Tmux for mere mortals</a>
+      (586 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=23165157">Linux containers in a few lines of code</a>
+      (458 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=23244709">KVM host in a few lines of code</a>
+      (158 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data16">
+    <td class="rank">16.</td>
+    <td class="url"><a href="https://john-doe.neocities.org" id="url16">john-doe.neocities.org</a></td>
+    <td class="total" title="7293 bytes">7.1&nbsp;KB</td>
+    <td class="content" title="4547 bytes">4.4&nbsp;KB</td>
+    <td class="ratio">62%</td>
+  </tr>
+  <tr class="info" id="info16">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=25170078">A simple way to make HTML websites</a>
+      (200 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data17">
+    <td class="rank">17.</td>
+    <td class="url"><a href="https://10kbclub.com/" id="url17">10kbclub.com</a></td>
+    <td class="total" title="7541 bytes">7.4&nbsp;KB</td>
+    <td class="content" title="7541 bytes">7.4&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info17">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/webdev/comments/kkcoko">10 KB Club</a>
+      (&approx; 610 points on r/webdev)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=25556860">10 KB Club</a>
+      (123 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data18">
+    <td class="rank">18.</td>
+    <td class="url"><a href="https://blog.fefe.de/" id="url18">blog.fefe.de</a></td>
+    <td class="total" title="8036 bytes">7.8&nbsp;KB</td>
+    <td class="content" title="8036 bytes">7.8&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info18">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/Android/comments/79uv4p">Monero mining malware sneaking into Android apps</a>
+      (&approx; 130 points on r/Android)
+    </li><li>
+      <a href="https://www.reddit.com/r/de/comments/ggd5v2">Verschwörungstheorien in Kombination zu betrachten (German)</a>
+      (&approx; 230 points on r/de)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data19">
+    <td class="rank">19.</td>
+    <td class="url"><a href="https://zupzup.org/" id="url19">zupzup.org</a></td>
+    <td class="total" title="8265 bytes">8.1&nbsp;KB</td>
+    <td class="content" title="8265 bytes">8.1&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info19">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/rust/comments/balhup">A Basic Web Application with Rust and Actix-web</a>
+      (&approx; 130 points on r/rust)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data20">
+    <td class="rank">20.</td>
+    <td class="url"><a href="https://www.paritybit.ca/" id="url20">www.paritybit.ca</a></td>
+    <td class="total" title="10001 bytes">9.8&nbsp;KB</td>
+    <td class="content" title="6853 bytes">6.7&nbsp;KB</td>
+    <td class="ratio">69%</td>
+  </tr>
+  <tr class="info" id="info20">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://lobste.rs/s/rzesjq">Why IRC is Still Good in $CURRENT_YEAR</a>
+      (61 points on Lobsters)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data21">
+    <td class="rank">21.</td>
+    <td class="url"><a href="http://akkartik.name/" id="url21">akkartik.name</a></td>
+    <td class="total" title="10042 bytes">9.8&nbsp;KB</td>
+    <td class="content" title="10042 bytes">9.8&nbsp;KB</td>
+    <td class="ratio">100%</td>
+  </tr>
+  <tr class="info" id="info21">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://news.ycombinator.com/item?id=15676691">The cargo cult of versioning</a>
+      (198 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=16471161">Nobody's just reading your code</a>
+      (352 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=21268252">Mu: A minimal hobbyist computing stack</a>
+      (105 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=21604685">Mu: Sketching out a minimal system programming language</a>
+      (102 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=22599953">Bicycles for the mind have to be see-through</a>
+      (210 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data22">
+    <td class="rank">22.</td>
+    <td class="url"><a href="http://cat-v.org/" id="url22">cat-v.org</a></td>
+    <td class="total" title="10115 bytes">9.9&nbsp;KB</td>
+    <td class="content" title="6643 bytes">6.5&nbsp;KB</td>
+    <td class="ratio">66%</td>
+  </tr>
+  <tr class="info" id="info22">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/programming/comments/225xe">The amazing Duff’s Device by Tom Duff!</a>
+      (&approx; 190 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/8f05r">The history of UTF-8 as told by Rob Pike</a>
+      (&approx; 230 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/8u72o">S-exp vs XML, by Erik Naggum</a>
+      (&approx; 260 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/8y348">Programming Quotes</a>
+      (&approx; 630 points on r/programming)
+    </li><li>
+      <a href="https://www.reddit.com/r/programming/comments/9djot">The Origin of Unix Pipes</a>
+      (&approx; 140 points on r/programming)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=2079631">SOAP: The 'S' stands for simple (not really)</a>
+      (246 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=2275161">The Origin of Unix Pipes</a>
+      (133 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=2570448">The Basic Laws of Human Stupidity </a>
+      (120 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=2723505">The 'intellectual property' oxymoron</a>
+      (115 points on HN)
+    </li><li>
+      <a href="https://news.ycombinator.com/item?id=2772718">Plan9 has been forked: 9front</a>
+      (150 points on HN)
+    </li></ul>
+    </td>
+  </tr>
+  <tr class="data" id="data23">
+    <td class="rank">23.</td>
+    <td class="url"><a href="https://lawzava.com/" id="url23">lawzava.com</a></td>
+    <td class="total" title="10136 bytes">9.9&nbsp;KB</td>
+    <td class="content" title="2328 bytes">2.3&nbsp;KB</td>
+    <td class="ratio">23%</td>
+  </tr>
+  <tr class="info" id="info23">
+    <td colspan="5">
+      
+    <p>
+      See the following discussions on content from this website:
+    </p>
+    <ul>
+<li>
+      <a href="https://www.reddit.com/r/linux/comments/k353y7">State Of Linux Usability 2020</a>
+      (&approx; 90 points on r/linux)
+    </li></ul>
+    </td>
+  </tr>
+</table>
+<p>
+The data in the table above was fetched on Sat, 10 Jul 2021 at 02:01 GMT. This data
+is refreshed automatically every Saturday at 01:09 UTC as well as on
+every push to its <a href="https://github.com/susam/10kbclub">GitHub
+repository</a>.
+</p>
+<p>
+Do not take the content size and content ratio columns too seriously.
+The content size is calculated using <a
+href="https://github.com/susam/10kbclub/blob/master/src/refresh.js">refresh.js</a>
+in the source code of the repository. It is not always accurate. For
+example, it considers internal CSS to be content but external CSS to be
+not content. Therefore, home pages that use CSS within an HTML page have
+an unfair advantage to get a higher content ratio than it should. <a
+href="https://250kb.club/">250 KB Club</a> too suffers from the same
+issue.
+</p>
+
+<h2 id="club-rules">Club Rules<a href="#club-rules"></a></h2>
+<p>
+Each website that is a member of the 10&nbsp;KB Club is identified by a
+URL to its home page. The URL must satisfy the following rules:
+</p>
+<ol>
+  <li>
+    <p>
+      If the URL is opened in a web browser with no ad blockers or
+      script blockers enabled, the compressed data that the web browser
+      has to fetch to load the complete web page must not exceed 10240
+      bytes. To check this on Firefox or Chrome, open a new
+      private/incognito window, then right click on the blank page and
+      select "Inspect", then go to the "Network" tab, and finally enter
+      the URL in the address bar and press enter. The transferred size
+      appears in the status bar at the bottom of the network tab.
+    </p>
+  </li>
+  <li>
+    <p>
+      The URL must point to a home page of the website. This is usually
+      the root directory of the domain, i.e., of the form <a
+      href="https://www.example.com/">https://www.example.com/</a> but
+      it need not always be so. An URL of the form <a
+      href="https://www.example.com/alice/">https://www.example.com/alice/</a>
+      is also okay as long as it is a home page of some website that
+      exists under that directory, i.e., a top-level user page within a
+      domain is considered as a website home page.
+    <p>
+  </li>
+  <li>
+    <p>
+      The URL must point to a page that contains useful content (e.g.,
+      an article, a manifesto page, etc.) or a list of links to such
+      content (e.g., blog listing, catalog of websites, etc.) or a list
+      of links of which at least one points to a page with a list of
+      links to such content (e.g., a home page with navigation links to
+      blog listing, feed, etc.), or provides useful functionality (e.g.,
+      a web-based game, an online currency convertor, etc.).
+    </p>
+  </li>
+  <li>
+    <p>
+      The URL must not point merely to a page with metadata about a
+      person or an organization (e.g., welcome page, about page, contact
+      information page, etc. without any other content are not okay).
+    </p>
+  </li>
+  <li>
+    <p>
+      The website must be very noteworthy or some content from the
+      website must have received at least 100 points on
+      <a href="https://www.reddit.com/">Reddit</a> or
+      <a href="https://news.ycombinator.com/">Hacker News</a> on at
+      least one occasion. Use
+      <a href="https://www.reddit.com/search/?sort=top&q=site:example.com">this
+      Reddit link</a> or
+      <a href="https://news.ycombinator.com/from?site=example.com">this
+      Hacker News link</a>
+      to check submissions for a website in these
+      forums and the points the submissions have received. Replace
+      "example.com" with the domain of the website while visiting
+      these links above.
+    </p>
+  </li>
+</ol>
+<p>
+Note that the manual steps provided for Firefox and Chrome in the 1st
+point do not constitute a definitive decision criteria for membership.
+The compressed transfer size computation for every website is automated
+in <a
+href="https://github.com/susam/10kbclub/blob/master/src/refresh.js">refresh.js</a>.
+The compressed transfer size observed by this script decides whether a
+website satisfies the 1st rule. The compressed transfer size observed by
+the script does not always exactly match what Firefox or Chrome shows.
+For example, this script does not count the <a
+href="https://en.wikipedia.org/wiki/Favicon">favicon</a> transfer size,
+so the transfer size that this script determines is usually a little
+less than what Firefox or Chrome shows.
+</p>
+<p>
+If a website's domain name or URL changed since one of its links
+received sufficient points on Reddit or Hacker News, as long as we can
+prove that the URL being submitted is indeed the same website from
+which some content received at least 100 points on Reddit or Hacker
+News, it is eligible to be a member of this club. For example, if the
+old website URL redirects to the new website or if
+the <a href="https://archive.org/">Wayback Machine</a> shows that the
+old URL had the same content as the new one, or if it is obvious that
+the content that was discussed on one of these forums now resides at a
+new URL, then that would be sufficient proof of eligibility.
+</p>
+
+<h2 id="new-membership">New Membership<a href="#new-membership"></a></h2>
+<p>
+To add a website as a member to this club, first ensure that it
+satisfies the rules laid out in the <a href="#club-rules">Club Rules</a>
+section. If it satisfies the club rules, then <a
+href="https://github.com/susam/10kbclub/issues/new">create a new issue
+on GitHub</a> and provide the URL of the website.
+</p>
+
+<footer>
+<hr>
+<p>
+The 10&nbsp;KB Club was created by
+<a href="https://github.com/susam">Susam Pal</a>. The source code of
+this website is available on
+<a href="https://github.com/susam/10kbclub">GitHub</a>.
+</p>
+<p>
+This website is inspired by Bradley Taunt's <a
+href="https://1mb.club/">1 MB Club</a> and Norman K&ouml;hring's <a
+href="https://250kb.club/">250 KB Club</a>.
+</p>
+<p>
+Made with &#9829; for a performant web.
+</p>
+</footer>
+</body>
+</html>
